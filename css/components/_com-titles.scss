@@ -1,0 +1,24 @@
+.com-title {
+
+    .mod-header & {
+        font-family: $font-raleway;
+        font-size:$font-40;
+        font-weight: bold;
+        color: $gris-oscuro;
+        line-height: $line-40;
+    }
+
+    .com-service &,
+    .com-text & {
+        font-family: $font-raleway;
+        font-size: $font-19;
+        line-height: $line-19;
+        color:$gris-medio;
+        margin-bottom:$px-10;
+    }
+
+    .com-text & {
+        color: $gris-medio-2;
+        margin:$px-15 0
+    }
+}

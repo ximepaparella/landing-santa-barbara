@@ -1,0 +1,16 @@
+.com-link {
+    font-family: $font-dosis;
+    font-size: $font-14;
+    line-height: $line-14;
+    text-transform: uppercase;
+    color: $blanco;
+
+    strong {
+        font-weight: bold;
+    }
+
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

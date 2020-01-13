@@ -1,0 +1,14 @@
+.mod-menu {
+    a {
+        text-transform: uppercase;
+        font-size: $font-14;
+        font-weight: bold;
+        font-family: $font-raleway;
+        color:$secundario;
+        padding: $px-20 $px-7;
+
+        &:hover {
+            color:$hover;
+        }
+    }
+}

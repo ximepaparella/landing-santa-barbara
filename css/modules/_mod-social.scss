@@ -1,0 +1,25 @@
+.mod-social {
+    position:absolute;
+    bottom:$px-10;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    i {
+        color:$blanco;
+        font-size:$font-28;
+    }
+
+    ul {
+        display:flex;
+        flex-direction: row;
+        margin:$px-20 0;
+        li {
+            margin:0 $px-17;
+        }
+    }
+
+    p {
+        font-size:$font-12;
+    }
+}

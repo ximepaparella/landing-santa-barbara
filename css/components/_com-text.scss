@@ -1,0 +1,15 @@
+.com-text {
+    padding-left:30px;
+
+    p {
+        margin:$px-15 0;
+        font-family: $font-open-condensed;
+        font-size:$font-16;
+        line-height: $line-16;
+        color: $gris-medio;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.com-call-to-action {
+    background-color: $primario;
+    color:$blanco;
+    padding:$px-70;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:$px-40;
+
+    blockquote {
+        font-family: $font-raleway;
+        font-size:$font-19;
+        margin-bottom:$px-20;
+    }
+}

@@ -1,0 +1,28 @@
+.com-image {
+
+    &.--first {
+        background-image: url(../../img/principal-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &.--second {
+        background-image: url(../../img/principal-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &.--third {
+        background-image: url(../../img/principal-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        display: flex;
+        flex-direction: row;
+    }
+}
