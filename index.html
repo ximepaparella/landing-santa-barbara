@@ -33,6 +33,20 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c259a594fc.js" crossorigin="anonymous"></script>
 
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/components/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: false,
+                slideWidth: 0,
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -58,8 +72,32 @@
     <!-- Main -->
     <main>
         <!-- Slider -->
-        <section class="mod-slider">
-        </section>
+        <div class="bxslider">
+            <div><img src="img/slides/slide-1.jpg" title="Un desarrollo de Eidico">
+                <div class="bx-caption">
+                    <h3>Un desarrollo de Eidico</h3>
+                    <p>Santa Bárbara es un barrio de más de 1.300 lotes, ubicado en Pacheco.
+                        Fue el tercer proyecto desarrollado por Eidico.
+                    </p>
+                </div>
+            </div>
+            <div><img src="img/slides/slide-2.jpg" title="Santa Bárbara | Eidico">
+                <div class="bx-caption">
+                    <h3>Un desarrollo de Eidico</h3>
+                    <p>Santa Bárbara es un barrio de más de 1.300 lotes, ubicado en Pacheco.
+                        Fue el tercer proyecto desarrollado por Eidico.
+                    </p>
+                </div>
+            </div>
+            <div><img src="img/slides/slide-3.jpg" title="Santa Bárbara | Eidico">
+                <div class="bx-caption">
+                    <h3>Un desarrollo de Eidico</h3>
+                    <p>Santa Bárbara es un barrio de más de 1.300 lotes, ubicado en Pacheco.
+                        Fue el tercer proyecto desarrollado por Eidico.
+                    </p>
+                </div>
+            </div>
+        </div>
         <!-- /Slider -->
 
         <!-- Intro 3 Columnas -->
@@ -125,8 +163,8 @@
                 </p>
                 <p>Cuenta con 1.387 lotes, distribuidos alrededor de 230 hectáreas. Además, 60 de esas hectáreas son de
                     laguna. </p>
-                <p>Y a las comodidades del barrio, se suman
-                    un Club House y un centro comercial. Hoy en día, hay más de 1.200 familias viviendo allí.</p>
+                <p>Y a las comodidades del barrio, se suman un Club House y un centro comercial. Hoy en día, hay más de
+                    1.200 familias viviendo allí.</p>
             </div>
         </section>
 
