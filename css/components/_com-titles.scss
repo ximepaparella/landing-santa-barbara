@@ -22,3 +22,19 @@
         margin:$px-15 0
     }
 }
+
+
+/* Mobile */
+@media screen and (max-width:650px) {
+    .com-title {
+
+        .mod-header & {
+            font-size:$font-30;
+        }
+
+        .com-service &,
+        .com-text & {
+            margin-bottom:$px-5;
+        }
+    }
+}

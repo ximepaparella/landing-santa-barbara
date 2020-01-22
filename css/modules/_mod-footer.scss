@@ -1,5 +1,5 @@
 .mod-footer {
-    background-image: url('../../img/footer.jpg');
+    background-image: url('http://estudioequis.com.ar/landing-santa-barbara/img/footer.jpg'); 
     background-repeat: no-repeat;
     background-size:100%;
     background-position: center center;
@@ -14,5 +14,24 @@
     h4 {
         font-size: $px-12;
         margin-bottom:$px-15;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:651px) and (max-width:1023px) {
+ .mod-footer {
+     padding:$px-10 0;
+     height:249px;
+     background-size:140%;
+ }
+}
+
+
+/* Mobile */
+@media screen and (max-width:650px) {
+    .mod-footer {
+        padding:$px-10 0;
+        height:249px;
+        background-size:270%;
     }
 }

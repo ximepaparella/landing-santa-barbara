@@ -51,6 +51,22 @@
     padding-bottom: $px-40;
 }
 
+/* Tablet */
+@media screen and (min-width:651px) and (max-width:1023px) {
+    .container-mini {
+        padding-left:$px-20;
+        padding-right:$px-20;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:650px) {
+    .container-mini {
+        padding-left:$px-20;
+        padding-right:$px-20;
+    }
+}
+
 //=======================================
 // container al 100% sin paddings ni margins
 //=======================================

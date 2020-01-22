@@ -1,7 +1,33 @@
 .com-banner {
-    background-image: url(../../img/banner.gif);
+    background-image: url('http://estudioequis.com.ar/landing-santa-barbara/img/banner.gif');
     background-repeat: no-repeat;
     background-position: center center;
     height:63px;
     background-size:100%;
+
+    a {
+        height: 63px;
+        width: 100%;
+        display: flex;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width:651px) and (max-width:1023px) {
+    .com-banner {
+        height:61px;
+        background-size: initial;
+
+        a {
+            height: 61px; 
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:650px) {
+    .com-banner {
+        background-size: 270%;
+    }
 }

@@ -155,6 +155,14 @@
             background: $negro;
             height: $px-1;
             margin: $px-30 0 $px-20 0;
+           
+        }
+        
+        /* Mobile */
+        @media screen and (max-width:650px) {
+            hr {
+                width:100%;
+            }
         }
 
         #wrap {

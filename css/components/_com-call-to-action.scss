@@ -1,5 +1,5 @@
 .com-call-to-action {
-    background-color: $primario;
+    background-color: #4296b4;
     color:$blanco;
     padding:$px-70;
     align-items: center;
@@ -11,5 +11,19 @@
         font-family: $font-raleway;
         font-size:$font-19;
         margin-bottom:$px-20;
+        text-align: center;
+        max-width: 65%;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width:650px) {
+    .com-call-to-action {
+        padding:$px-40;
+
+        blockquote { 
+            max-width: 100%;
+        }
     }
 }

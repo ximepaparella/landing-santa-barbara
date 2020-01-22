@@ -13,6 +13,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <meta name="copyright" content="" />
+    <meta name="robots" content="index, follow">
 
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="" />
@@ -24,6 +25,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/site.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -44,6 +48,7 @@
                 mode: 'fade',
                 captions: false,
                 slideWidth: 0,
+                responsive: true
             });
         });
     </script>
@@ -57,12 +62,26 @@
         <h1 class="com-title">Santa Bárbara</h1>
         <!-- Logo -->
 
+        <script>
+            $(document).ready(function () {
+                $(".mod-menu").css("display", "none");
+
+                $(".hamburger").click(function () {
+                    $(".mod-menu").slideToggle() (500);
+                });
+            });
+        </script>
+
         <!-- Menu -->
+        <div class="com-menu">
+            <a id="hamburger" class="hamburger"><i class="fas fa-bars"></i></a>
+        </div>
         <navbar class="mod-menu">
-            <a href="https://eidico.com.ar/public/" target="_blank">Eidico</a>
-            <a href="http://blog.eidico.com.ar/" target="_blank">Blog</a>
-            <a href="http://www.revistatigris.com.ar/" target="_blank">Revista Tigris</a>
-            <a href="https://eidico.com.ar/public/contacto" target="_blank">Contacto</a>
+            <a href="https://eidico.com.ar/public/" target="_blank" alt="Ir a Eidico">Eidico</a>
+            <a href="http://blog.eidico.com.ar/" target="_blank" alt="Ir al Blog">Blog</a>
+            <a href="http://www.revistatigris.com.ar/" target="_blank" alt="Ir a sitio Revista Tigris">Revista
+                Tigris</a>
+            <a href="https://eidico.com.ar/public/contacto" target="_blank" alt="Contactanos">Contacto</a>
         </navbar>
         <!-- /Menu -->
     </header>
@@ -101,29 +120,41 @@
         <!-- /Slider -->
 
         <!-- Intro 3 Columnas -->
-        <div class="container-mini row-gap-3">
+        <div class="container-mini row-gap-deskxl-3 row-gap-desksm-3 row-gap-tablet-3 row-gap-1">
             <div class="com-service">
-                <img src="img/service-1.jpg" />
+                <a href="http://blog.eidico.com.ar/centros-comerciales-tigre/" alt="Conocé nuestros centros comerciales"
+                    target="_blank">
+                    <img src="img/service-1.jpg" alt="Servicios Comerciales" />
+                </a>
                 <hr />
-                <a href="http://blog.eidico.com.ar/centros-comerciales-tigre/" target="_blank">
+                <a href="http://blog.eidico.com.ar/centros-comerciales-tigre/" alt="Conocé nuestros centros comerciales"
+                    target="_blank">
                     <h2 class="com-title">Servicios</h2>
                     <p>Conocé cuáles son los centros comerciales de la zona.</p>
                 </a>
             </div>
             <div class="com-service">
-                <img src="img/service-2.jpg" />
-                <hr />
                 <a href="https://www.google.com/maps/place/Barrio+Cerrado+Santa+B%C3%A1rbara/@-34.4468468,-58.6326002,15z/data=!4m2!3m1!1s0x0:0x1e30899f0daceea0?sa=X&ved=2ahUKEwjwmeK_nMLmAhWEB9QKHfxLAh8Q_BIwE3oECBMQCA"
-                    target="_blank">
+                    alt="Ver Ubicación en Google maps">
+                    <img src="img/service-2.jpg" alt="Ubicación del barrio Santa Bárbara" />
+                </a>
+                <hr />
+
+                <a href="https://www.google.com/maps/place/Barrio+Cerrado+Santa+B%C3%A1rbara/@-34.4468468,-58.6326002,15z/data=!4m2!3m1!1s0x0:0x1e30899f0daceea0?sa=X&ved=2ahUKEwjwmeK_nMLmAhWEB9QKHfxLAh8Q_BIwE3oECBMQCA"
+                    alt="Ver Ubicación en Google maps" target="_blank">
                     <h2 class="com-title">Ubicación</h2>
                     <p>Santa Bárbara se encuentra en el Corredor Bancalari-Benavídez, en Los Troncos del Talar, Pacheco.
                     </p>
                 </a>
             </div>
             <div class="com-service">
-                <img src="img/service-3.jpg" />
+                <a href="https://eidico.com.ar/public/project?estado[]=1&estado[]=4" target="_blank"
+                    alt="Ver los Proyectos de Eidico Disponibles">
+                    <img src="img/service-3.jpg" alt="Proyectos Eidico Disponibles" />
+                </a>
                 <hr />
-                <a href="https://eidico.com.ar/public/project?estado[]=1&estado[]=4" target="_blank">
+                <a href="https://eidico.com.ar/public/project?estado[]=1&estado[]=4" target="_blank"
+                    alt="Ver los Proyectos de Eidico Disponibles">
                     <h2 class="com-title">Proyectos Eidico disponibles</h2>
                     <p>¿Querés conocer nuestros lotes y casas disponibles? Te invitamos a ser parte de nuestros
                         proyectos.</p>
@@ -134,7 +165,7 @@
 
         <!-- Banner -->
         <section class="com-banner">
-            <a href="https://www.eidicom.com/EidicomWeb/public/" target="_blank">
+            <a href="https://www.eidicom.com/EidicomWeb/public/" target="_blank" alt="Ir a sitio web de Eidico">
 
             </a>
         </section>
@@ -142,21 +173,21 @@
 
         <!-- Content -->
         <section class="com-gallery row container">
-            <div class="com-image --first col-4">
+            <div class="com-image --first  col-tablet-5 col-deskxl-4 col-12">
 
             </div>
 
-            <div class="com-image --second col-8">
+            <div class="com-image --second col-tablet-7 col-deskxl-8 col-12">
 
             </div>
         </section>
         <!-- /Content -->
 
         <section class="com-content row container">
-            <div class="col-6 com-image --third">
+            <div class="col-deskxl-6 col-12 col-tablet-6 com-image --third">
             </div>
 
-            <div class="col-6 com-text">
+            <div class="col-deskxl-6 col-12 col-tablet-6 com-text">
                 <h2 class="com-title">Cómo Eidico desarrolló Santa Bárbara</h2>
                 <p>Lanzado en 1997, Santa Bárbara es uno de los primeros barrios desarrollados por Eidico. Está ubicado
                     en Pacheco, sobre el <strong>Corredor Bancalari-Benavídez. </strong>
@@ -170,13 +201,13 @@
 
         <!-- Call To Action -->
         <div class="com-call-to-action container">
-            <blockquote>“Cuando lanzaron Santa Bárabra, compramos el terreno como inversión, y fue una muy buena
+            <blockquote>“Cuando lanzaron Santa Bárbara, compramos el terreno como inversión, y fue una muy buena
                 apuesta”. </blockquote>
             <span class="com-author">
                 Lucila, Santa Bárbara.
             </span>
 
-            <a href="" class="com-link">
+            <a href="" class="com-link" alt="Ver video en canal de Youtube">
                 <<<< Mirá el video en el canal de <strong>Eidico</strong> de <strong>YouTube. >>>>
                     </strong>
             </a>
@@ -188,28 +219,28 @@
     <!-- Footer -->
     <footer class="mod-footer">
         <h4> DESARROLLADO POR </h4>
-        <img class="com-logo" src="img/eidico-logo.png" />
+        <img class="com-logo" src="img/eidico-logo.png" alt="Eidico" />
 
         <section class="mod-social">
             <p>Nuestras redes sociales</p>
             <ul>
                 <li>
-                    <a href="https://twitter.com/eidico" target="_blank">
+                    <a href="https://twitter.com/eidico" target="_blank" alt="Ir a Twitter de Eidico">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/eidico">
+                    <a href="https://www.facebook.com/eidico" target="_blank" alt="Ir a Facebook de Eidico">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/eidico/">
+                    <a href="https://www.instagram.com/eidico/" target="_blank" alt="Ir a Instagram de Eidico">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/company/eidico/">
+                    <a href="https://www.linkedin.com/company/eidico/" target="_blank" alt="Ir a Linkedin de Eidico">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>

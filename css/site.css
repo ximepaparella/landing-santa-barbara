@@ -166,6 +166,13 @@ hr {
   margin: 1.875em 0 1.25em 0;
 }
 
+/* Mobile */
+@media screen and (max-width: 650px) {
+  hr {
+    width: 100%;
+  }
+}
+
 #wrap {
   position: relative;
 }
@@ -1145,6 +1152,11 @@ hr {
       grid-template-columns: 1fr 1fr;
 }
 
+.row-gap-1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 @media (min-width: 48em) {
   .row-gap-tablet-4 {
     -ms-grid-columns: 1fr 1fr 1fr  1fr;
@@ -1247,6 +1259,22 @@ hr {
   padding-bottom: 2.5em;
 }
 
+/* Tablet */
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .container-mini {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .container-mini {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+
 .container-full-width {
   padding-left: 0;
   padding-right: 0;
@@ -1270,6 +1298,21 @@ hr {
           align-items: center;
 }
 
+/* Tablet */
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-header {
+    padding: 1.5625em 1.25em;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .mod-header {
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+  }
+}
+
 .mod-menu a {
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -1283,15 +1326,45 @@ hr {
   color: #00b3db;
 }
 
-.mod-slider {
-  margin: 0 0 3.125em 0;
-  background-color: #00b3db;
-  display: block;
-  height: 300px;
+.com-menu {
+  display: none;
 }
 
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .mod-menu {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    z-index: 99999;
+    top: 90px;
+    background-color: #fff;
+    text-align: center;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mod-menu a {
+    border-bottom: 1px solid #696969;
+  }
+  .mod-menu a:last-of-type {
+    border: none;
+  }
+  .com-menu {
+    display: block;
+    font-size: 1.875rem;
+    top: 5px;
+    position: relative;
+  }
+}
+
+/* Mobile */
 .mod-footer {
-  background-image: url("../../img/footer.jpg");
+  background-image: url("http://estudioequis.com.ar/landing-santa-barbara/img/footer.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
@@ -1314,6 +1387,24 @@ hr {
 .mod-footer h4 {
   font-size: 0.75em;
   margin-bottom: 0.9375em;
+}
+
+/* Tablet */
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-footer {
+    padding: 0.625em 0;
+    height: 249px;
+    background-size: 140%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .mod-footer {
+    padding: 0.625em 0;
+    height: 249px;
+    background-size: 270%;
+  }
 }
 
 .mod-social {
@@ -1381,17 +1472,75 @@ hr {
   margin: 0.9375em 0;
 }
 
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .mod-header .com-title {
+    font-size: 1.875rem;
+  }
+  .com-service .com-title,
+  .com-text .com-title {
+    margin-bottom: 0.3125em;
+  }
+}
+
 .com-service a p:hover {
   color: #454545;
   text-decoration: underline;
 }
 
+.com-service img {
+  width: 100%;
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .com-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2.5em;
+  }
+}
+
 .com-banner {
-  background-image: url(../../img/banner.gif);
+  background-image: url("http://estudioequis.com.ar/landing-santa-barbara/img/banner.gif");
   background-repeat: no-repeat;
   background-position: center center;
   height: 63px;
   background-size: 100%;
+}
+
+.com-banner a {
+  height: 63px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Tablet */
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .com-banner {
+    height: 61px;
+    background-size: initial;
+  }
+  .com-banner a {
+    height: 61px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .com-banner {
+    background-size: 270%;
+  }
 }
 
 .com-gallery {
@@ -1403,7 +1552,7 @@ hr {
 }
 
 .com-image.--first {
-  background-image: url(../../img/principal-1.jpg);
+  background-image: url("http://estudioequis.com.ar/landing-santa-barbara/img/principal-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   height: 300px;
@@ -1417,7 +1566,7 @@ hr {
 }
 
 .com-image.--second {
-  background-image: url(../../img/principal-2.jpg);
+  background-image: url("http://estudioequis.com.ar/landing-santa-barbara/img/principal-2.jpg");
   background-repeat: no-repeat;
   background-position: center right;
   height: 300px;
@@ -1431,7 +1580,7 @@ hr {
 }
 
 .com-image.--third {
-  background-image: url(../../img/principal-3.jpg);
+  background-image: url("http://estudioequis.com.ar/landing-santa-barbara/img/principal-3.jpg");
   background-repeat: no-repeat;
   background-position: center right;
   display: -webkit-box;
@@ -1443,8 +1592,24 @@ hr {
           flex-direction: row;
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .com-image.--first {
+    border-right: 4px solid #FFF;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .com-image.--second {
+    margin-top: 2.1875em;
+  }
+  .com-image.--third {
+    height: 300px;
+  }
+}
+
 .com-text {
-  padding-left: 30px;
+  padding-left: 43px;
 }
 
 .com-text p {
@@ -1459,8 +1624,15 @@ hr {
   font-weight: bold;
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .com-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .com-call-to-action {
-  background-color: #337ab7;
+  background-color: #4296b4;
   color: #FFF;
   padding: 4.375em;
   -webkit-box-align: center;
@@ -1480,6 +1652,18 @@ hr {
   font-family: "Raleway", sans-serif;
   font-size: 1.1875rem;
   margin-bottom: 1.25em;
+  text-align: center;
+  max-width: 65%;
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .com-call-to-action {
+    padding: 2.5em;
+  }
+  .com-call-to-action blockquote {
+    max-width: 100%;
+  }
 }
 
 .com-author {
@@ -1504,6 +1688,13 @@ hr {
 
 .com-link:hover {
   text-decoration: underline;
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .com-call-to-action .com-link {
+    text-align: center;
+  }
 }
 
 .com-logo {

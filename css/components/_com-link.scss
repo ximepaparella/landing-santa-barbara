@@ -14,3 +14,11 @@
         text-decoration: underline;
     }
 }
+
+
+/* Mobile */
+@media screen and (max-width:650px) {
+ .com-call-to-action .com-link {
+     text-align: center;
+ }
+}

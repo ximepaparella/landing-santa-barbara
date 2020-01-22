@@ -267,6 +267,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.row-gap-1{
+  grid-template-columns: 1fr;
+}
+
 @media ($media-m){
   //columnas de 4
   .row-gap-tablet-4{

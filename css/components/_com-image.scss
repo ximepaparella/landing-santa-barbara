@@ -1,7 +1,7 @@
 .com-image {
 
     &.--first {
-        background-image: url(../../img/principal-1.jpg);
+        background-image: url('http://estudioequis.com.ar/landing-santa-barbara/img/principal-1.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         height: 300px;
@@ -10,7 +10,7 @@
     }
 
     &.--second {
-        background-image: url(../../img/principal-2.jpg);
+        background-image: url('http://estudioequis.com.ar/landing-santa-barbara/img/principal-2.jpg');
         background-repeat: no-repeat;
         background-position: center right;
         height: 300px;
@@ -19,10 +19,31 @@
     }
 
     &.--third {
-        background-image: url(../../img/principal-3.jpg);
+        background-image: url('http://estudioequis.com.ar/landing-santa-barbara/img/principal-3.jpg');
         background-repeat: no-repeat;
         background-position: center right;
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1023px) {
+    .com-image {
+        &.--first {
+            border-right: 4px solid $blanco;
+        }
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width:650px) {
+    .com-image {
+        &.--second {
+            margin-top:$px-35;
+        }
+        &.--third {
+            height: 300px;
+        }
     }
 }
